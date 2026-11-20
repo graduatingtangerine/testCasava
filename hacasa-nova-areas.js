@@ -8147,8 +8147,8 @@ zodiac-virgo|horoscope`;var ms=null,Zc=()=>ms||(ms=hs.split(`
       <ul class="rooms" data-drag>
       ${p.map((b,j)=>d`<li class=${t.roomDrag===b.id?"on drag":"on"} data-k=${b.id}><span class="grip" title=${n("Sleep om te verplaatsen")} @pointerdown=${O=>Ot(O,b.id,V=>{t.roomDrag=b.id,h(V.map(he=>p.find(ce=>ce.id===he)))},V=>{t.roomDrag=null,h(V.map(he=>p.find(ce=>ce.id===he)))})}><ha-icon icon="mdi:drag"></ha-icon></span><span>${b.name}</span>
         <button title=${n("Omhoog")} @click=${()=>f(j,-1)}>↑</button><button title=${n("Omlaag")} @click=${()=>f(j,1)}>↓</button>
-        <button title=${n("Verbergen in navigatie")} @click=${()=>h(p.filter(O=>O.id!==b.id))}>${n("Verbergen in navigatie")}</button></li>`)}
-      ${u.map(b=>d`<li><span>${b.name}</span><button title=${n("Tonen in navigatie")} @click=${()=>h([...p,b])}>${n("Tonen in navigatie")}</button></li>`)}
+        <button title=${n("Hide from navigation")} @click=${()=>h(p.filter(O=>O.id!==b.id))}>${n("Hide from navigation")}</button></li>`)}
+      ${u.map(b=>d`<li><span>${b.name}</span><button title=${n("Show in navigation")} @click=${()=>h([...p,b])}>${n("Show in navigation")}</button></li>`)}
     </ul>`),startpagina:d`
       ${_(n("Kop"),"",d`
         ${Q(n("Temperatuur"),ne(e,"sensor",a.home?.temperature,b=>o("temperature",b),{empty:n("gemiddelde van de kamers"),filter:b=>b.attributes.device_class==="temperature"}))}
